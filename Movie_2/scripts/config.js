@@ -3,15 +3,17 @@
 //prevent errors in IE when console is not present.
 window.console||(window.console={log:function(){}});
 
+Packages = undefined;
+
 require.config({
-    paths: {
+	paths: {
         jQuery: '../public/jquery/jquery.min',
-        Underscore: '../Public/underscore/underscore-min',
-        Backbone: '../Public/backbone/backbone-min',
-        Bootstrap: '../Public/bootstrap/js/bootstrap.min',
-        text: '../Public/require/text',
+        Underscore: '../public/underscore/underscore-min',
+        Backbone: '../public/backbone/backbone-min',
+        Bootstrap: '../public/bootstrap/js/bootstrap.min',
+        text: '../public/require/text',
         templates: '../templates',
-       Marionette: '../Public/marionette/backbone.marionette',
+       Marionette: '../public/marionette/backbone.marionette',
     },
     shim: {
         'Moment': {
@@ -45,10 +47,10 @@ require(
         'Underscore',
         'Backbone',
         'Bootstrap',
-        'scripts/routers/movierouter.js',
-        'scripts/controllers/moviecontroller.js',
-         'scripts/routers/miscrouter.js',
-        'scripts/controllers/misccontroller.js'
+        'scripts/routers/MovieRouter.js',
+        'scripts/controllers/MovieController.js',
+         'scripts/routers/MiscRouter.js',
+        'scripts/controllers/MiscController.js'
     ],
     function ($, _, Backbone, Bootstrap, MovieRouter, MovieController, MiscRouter, MiscController) {
         console.log('config');

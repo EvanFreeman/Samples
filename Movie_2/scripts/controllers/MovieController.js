@@ -6,7 +6,7 @@
         'scripts/views/PageHeaderView.js',
         'scripts/views/SidebarView.js',
         'scripts/collections/MoviesCollection.js',
-        'scripts/views/layout.js',
+        'scripts/views/Layout.js',
         'Marionette'
     ], function ($, _, Backbone, MoviesView, PageHeaderView, SidebarView, MoviesCollection, Layout) {
         return {
